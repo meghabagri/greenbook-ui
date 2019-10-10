@@ -1,0 +1,48 @@
+interface NavAttributes {
+  [propName: string]: any;
+}
+interface NavWrapper {
+  attributes: NavAttributes;
+  element: string;
+}
+interface NavBadge {
+  text: string;
+  variant: string;
+}
+interface NavLabel {
+  class?: string;
+  variant: string;
+}
+
+export interface NavData {
+  name?: string;
+  url?: string;
+  icon?: string;
+  badge?: NavBadge;
+  title?: boolean;
+  children?: NavData[];
+  variant?: string;
+  attributes?: NavAttributes;
+  divider?: boolean;
+  class?: string;
+  label?: NavLabel;
+  wrapper?: NavWrapper;
+}
+
+export const userNavItems: NavData[] = [
+  {
+    title: true,
+    name: ''
+  },
+  {
+    name: 'Existing Projects',
+    url: '/user/existing',
+    icon: 'icon-list'
+  },
+  {
+    name: 'Post a Project',
+    url: '/user/create',
+    icon: 'icon-plus'
+  },
+  
+];

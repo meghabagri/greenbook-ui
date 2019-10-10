@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/62a62db1-f2a7-4262-a683-03a9ee4dd696/resourceGroups/pacman-rg/providers/Microsoft.Web/sites/dbwebapp-green",
+    "appService.deploySubpath": ""
+}

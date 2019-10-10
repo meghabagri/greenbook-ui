@@ -1,0 +1,56 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Insert Project</strong>
+          <small>New</small>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="name">Project Name</label>
+                <input type="text" [(ngModel)]="ProjectName" class="form-control" id="name" placeholder="Enter project name">
+              </div>
+            </div>
+          </div><!--/.row-->
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="textarea-input">Project Description</label>
+                <div class="col-md-12">
+                  <textarea id="textarea-input" [(ngModel)]="ProjectDescription" name="textarea-input" rows="9" class="form-control" placeholder="Enter description"></textarea>
+                </div>
+              </div>
+            </div>
+          </div><!--/.row-->
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label for="name">Initial Seed</label>
+                <input type="text" [(ngModel)]="CurrentInvesmentAmount" class="form-control" id="name" placeholder="Enter initial seed">
+              </div>
+            </div>
+          </div><!--/.row-->
+          <div class="row">
+            <div class="form-group">
+              <label class="col-md-12" for="disabledSelect">Select Category</label>
+              <div class="col-md-9">
+                <select [(ngModel)]="category" style="width:150px;" id="disabledSelect" class="form-control">
+                  <option disabled>Please select</option>
+                  <option value="Environment">Environment</option>
+                  <option value="Social">Social</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-footer">
+          <button type="submit" (click)="submit()" class="btn btn-square btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div>
+</div>
